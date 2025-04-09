@@ -51,7 +51,7 @@
             tooltip-format = "{calendar}";
             calendar = {
               format = {
-                today = "<span background='#${config.lib.stylix.colors.base0D}' color='#${config.lib.stylix.colors.base00}'><b>{}</b></span>";
+                today = "<span background='#2DF598' color='#121212'><b>{}</b></span>";
               };
             };
           };
@@ -109,39 +109,39 @@
       };
 
       style = ''
-                * {
-                  font-size: 16px;
-                  font-family: "Ubuntu", monospace;
-                  font-weight: bold;
-        	  margin: 0;
-        	  padding: 0;
-                }
+        * {
+          font-size: 16px;
+          font-family: "Ubuntu", monospace;
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+        }
 
-                window#waybar {
-        	  background: #${config.lib.stylix.colors.base01};
-        	  border-radius: 0 0 8px 8px;
-        	  color: #${config.lib.stylix.colors.base05};
-                }
+        window#waybar {
+          background: #212121;
+          border-radius: 0 0 8px 8px;
+          color: #C8E1F8;
+        }
 
-                #workspaces button {
-        	  padding: 0 2px;
-        	  color: #${config.lib.stylix.colors.base05};
-                }
+        #workspaces button {
+          padding: 0 2px;
+          color: #C8E1F8;
+        }
 
-                #workspaces button.active {
-        	  color: #${config.lib.stylix.colors.base0D};
-                }
+        #workspaces button.active {
+          color: #2DF598;
+        }
 
-                #clock,
-                #network,
-                #pulseaudio,
-                #memory,
-                #cpu,
-                #battery,
-        	#tray {
-        	  padding: 0 10px;
-        	  color: #${config.lib.stylix.colors.base05};
-                }
+        #clock,
+        #network,
+        #pulseaudio,
+        #memory,
+        #cpu,
+        #battery,
+        #tray {
+          padding: 0 10px;
+          color: #C8E1F8;
+        }
       '';
     };
   };

@@ -8,6 +8,8 @@
     wayland.windowManager.hyprland = {
       enable = true;
 
+      systemd.enable = true;
+
       settings = {
         "$terminal" = "alacritty";
         "$fileManager" = "nautilus";
@@ -20,6 +22,7 @@
         monitor = [
           "eDP-1,1920x1200@60,0x0,1"
           "desc:Dell Inc. DELL U2723QE 6DCGH34,preferred,auto,1.5"
+          "desc:Philips Consumer Electronics Company PHL 328P6VU AU52129000348,preferred,auto,1.5"
           ",preferred,auto,1"
         ];
 

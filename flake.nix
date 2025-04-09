@@ -11,7 +11,7 @@
       url = "github:nix-community/nixvim/nixos-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix.url = "github:danth/stylix/release-24.11";
+    # stylix.url = "github:danth/stylix/release-24.11";
     # hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
   };
 
@@ -20,7 +20,7 @@
       nixpkgs,
       home-manager,
       nixvim,
-      stylix,
+      # stylix,
       # hyprpanel,
       ...
     }:
@@ -47,7 +47,7 @@
             ./home.nix
             ./modules
             nixvim.homeManagerModules.nixvim
-            stylix.homeManagerModules.stylix
+            # stylix.homeManagerModules.stylix
           ];
         };
       };

@@ -6,6 +6,8 @@
   home.username = "anton";
   home.homeDirectory = "/home/anton";
 
+  services.gnome-keyring.enable = true;
+
   # Shells
   programs.bash.enable = true;
 
@@ -20,7 +22,7 @@
   bmofetch.enable = true;
 
   ## Notification Manager Config
-  # dunst.enable = true;
+  dunst.enable = true;
   # gtkTheme.enable = true;
 
   ## Hyprland Config
@@ -40,7 +42,7 @@
   rofi.enable = true;
 
   ## Style Config
-  stylix-theme.enable = true;
+  # stylix-theme.enable = true;
   waybar.enable = true;
   # hyprpanel.enable = true;
 

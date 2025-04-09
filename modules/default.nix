@@ -15,7 +15,7 @@
     ./nixvim.nix
     ./pretty-proto.nix
     ./rofi.nix
-    ./stylix.nix
+    # ./stylix.nix
     ./waybar.nix
     ./zsh.nix
   ];
