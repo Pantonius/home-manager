@@ -303,6 +303,7 @@
       extraPlugins = with pkgs.vimPlugins; [
         LanguageTool-nvim
         vimtex
+        Coqtail
       ];
 
       keymaps = [
