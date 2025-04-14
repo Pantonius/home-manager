@@ -23,6 +23,7 @@
           "eDP-1,1920x1200@60,0x0,1"
           "desc:Dell Inc. DELL U2723QE 6DCGH34,preferred,auto,1.5"
           "desc:Philips Consumer Electronics Company PHL 328P6VU AU52129000348,preferred,auto,1.5"
+          "desc:Crestron Electronics Inc. Crestron,preferred, auto, 1, mirror, eDP-1"
           ",preferred,auto,1"
         ];
 
@@ -151,6 +152,9 @@
           ", XF86AudioPlay, exec, playerctl play-pause"
           ", XF86AudioPrev, exec, playerctl previous"
           ", XF86AudioNext, exec, playerctl next"
+
+          ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+          ", XF86MonBrightnessUp, exec, brightnessctl set 5%+"
 
           ", Print, exec, grim -g \"$(slurp)\" - | wl-copy"
         ];
