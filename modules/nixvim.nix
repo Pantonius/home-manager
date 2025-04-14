@@ -56,6 +56,8 @@
             desc = "Toggle autoformat-on-save",
             bang = true,
           })
+
+          vim.g.coqtail_noimap = 1
         '';
       plugins = {
         lualine.enable = true;
