@@ -81,16 +81,16 @@
         harpoon = {
           enable = true;
 
-          keymaps = {
-            addFile = "<leader>a";
-            toggleQuickMenu = "<C-e>";
-            navFile = {
-              "1" = "<A-1>";
-              "2" = "<A-2>";
-              "3" = "<A-3>";
-              "4" = "<A-4>";
-            };
-          };
+          # keymaps = {
+          #   addFile = "<leader>a";
+          #   toggleQuickMenu = "<C-e>";
+          #   navFile = {
+          #     "1" = "<A-1>";
+          #     "2" = "<A-2>";
+          #     "3" = "<A-3>";
+          #     "4" = "<A-4>";
+          #   };
+          # };
         };
 
         # Language Servers
@@ -259,7 +259,6 @@
             sources = [
               { name = "git"; }
               { name = "nvim_lsp"; }
-              # { name = "copilot"; }
               { name = "buffer"; }
               { name = "path"; }
             ];
@@ -276,17 +275,6 @@
               "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
             };
           };
-        };
-
-        copilot-cmp = {
-          enable = true;
-        };
-
-        copilot-lua = {
-          enable = true; # Copilot
-
-          suggestion.enabled = false;
-          panel.enabled = false;
         };
 
         cmp-nvim-lsp = {

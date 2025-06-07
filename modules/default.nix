@@ -10,6 +10,7 @@
     ./hyprcursor.nix
     ./hyprgrass.nix
     ./hyprpaper.nix
+    ./hyprsunset.nix
     # ./hyprpanel.nix
     ./kitty.nix
     ./nixvim.nix
