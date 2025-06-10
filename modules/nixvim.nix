@@ -12,6 +12,7 @@
   config = lib.mkIf config.nixvim.enable {
     programs.ripgrep.enable = true; # Required for Telescope
 
+    # see https://github.com/nix-community/nixvim
     programs.nixvim = {
       enable = true;
       defaultEditor = true;
