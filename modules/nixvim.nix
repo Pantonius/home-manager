@@ -80,6 +80,11 @@
         # harpoon
         harpoon.enable = true;
 
+        # neo-tree
+        neo-tree = {
+          enable = true;
+        };
+
         # Language Servers
         lsp = {
           enable = true;
@@ -328,7 +333,7 @@
         {
           mode = "n";
           key = "<leader>pv";
-          action = "<cmd>Ex<CR>";
+          action = "<cmd>Neotree toggle<CR>";
         }
 
         # move lines up and down in visual mode
