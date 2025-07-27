@@ -21,11 +21,13 @@
 
         monitor = [
           "eDP-1,1920x1200@60,0x0,1"
-          "desc:Dell Inc. DELL U2723QE 6DCGH34,preferred,auto,1.5"
+          "desc:Dell Inc. DELL U2723QE 6DCGH34, preferred, auto, 1.5"
           "desc:Philips Consumer Electronics Company PHL 328P6VU AU52129000348,preferred,auto,1.5"
           "desc:Crestron Electronics Inc. Crestron, preferred, auto, 1, mirror, eDP-1"
           "desc:Canon Inc. CANON WUX500 0x01010101, preferred, auto, 1, mirror, eDP-1"
           "desc:Crestron Electronics Inc. Crestron 420, preferred, auto, 1, mirror, eDP-1"
+          "desc:Dell Inc. DELL U2713HM GK0KD277235L, preferred, 960x-1080, 1"
+          "desc:AOC 2470W GGZH8HA096968, preferred, 0x-1920, 1, transform, 3"
           ",preferred,auto,1"
         ];
 
