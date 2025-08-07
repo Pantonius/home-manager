@@ -47,6 +47,9 @@
   waybar.enable = true;
   # hyprpanel.enable = true;
 
+  ## Zathura
+  zathura.enable = true;
+
   home.stateVersion = "25.05";
 
   # Let Home Manager install and manage itself.

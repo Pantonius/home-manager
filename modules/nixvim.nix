@@ -19,6 +19,12 @@
 
       colorschemes = {
         nord.enable = true;
+        tokyonight = {
+          settings = {
+            style = "storm";
+            lualine_bold = true;
+          };
+        };
       };
 
       globals.mapleader = " ";
@@ -85,6 +91,9 @@
         neo-tree = {
           enable = true;
         };
+
+        # typst
+        typst-vim.enable = true;
 
         # Language Servers
         lsp = {
@@ -288,6 +297,7 @@
         vimtex
         Coqtail
         coq-lsp-nvim
+        # mdx-analyzer
       ];
 
       keymaps = [

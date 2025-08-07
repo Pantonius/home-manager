@@ -27,7 +27,7 @@
           "desc:Canon Inc. CANON WUX500 0x01010101, preferred, auto, 1, mirror, eDP-1"
           "desc:Crestron Electronics Inc. Crestron 420, preferred, auto, 1, mirror, eDP-1"
           "desc:Dell Inc. DELL U2713HM GK0KD277235L, preferred, 960x-1080, 1"
-          "desc:AOC 2470W GGZH8HA096968, preferred, 0x-1920, 1, transform, 3"
+          "desc:AOC 2470W GGZH8HA096968, preferred, -120x-1920, 1, transform, 3"
           ",preferred,auto,1"
         ];
 
