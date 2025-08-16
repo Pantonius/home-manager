@@ -9,11 +9,12 @@
   services.gnome-keyring.enable = true;
 
   # Shells
-  programs.bash.enable = true;
+  # programs.bash.enable = true;
+  zsh.enable = true;
 
   # Some modules of my own
   ## Terminal
-  alacritty.enable = true;
+  ghostty.enable = true;
 
   ## Git
   git.enable = true;

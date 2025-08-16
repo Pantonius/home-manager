@@ -30,8 +30,6 @@
           modules-right = [
             "pulseaudio"
             "network"
-            "cpu"
-            "memory"
             "battery"
             "clock"
             "tray"
@@ -77,8 +75,8 @@
           };
 
           "network" = {
-            format-wifi = "   {signalStrength}%";
-            format-ethernet = "{ipaddr}/{cidr} 󰈀 ";
+            format-wifi = "";
+            format-ethernet = "󰈀";
             format-disconnected = "DISCONNECTED";
             format-alt = "{ifname}: {ipaddr}/{cidr}";
             tooltip-format = "{ifname}: {ipaddr}/{cidr}";
@@ -123,7 +121,6 @@
 
         window#waybar {
           background: #212121;
-          border-radius: 0 0 8px 8px;
           color: #C8E1F8;
         }
 
@@ -145,6 +142,14 @@
         #tray {
           padding: 0 10px;
           color: #C8E1F8;
+        }
+        #tray menu {
+          background: #212121;
+          color: #C8E1F8;
+          border-radius: 0;
+          border: 1pt black;
+          font-size: 16px;
+          font-family: "Ubuntu", monospace;
         }
       '';
     };

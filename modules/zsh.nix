@@ -7,12 +7,15 @@
   config = lib.mkIf config.zsh.enable {
     programs.zsh = {
       enable = true;
+      syntaxHighlighting.enable = true;
 
       oh-my-zsh = {
         enable = true;
         plugins = [
           "git"
+          "thefuck"
         ];
+        theme = "lambda";
       };
     };
   };

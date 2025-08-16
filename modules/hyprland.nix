@@ -11,7 +11,7 @@
       systemd.enable = true;
 
       settings = {
-        "$terminal" = "alacritty";
+        "$terminal" = "ghostty";
         "$fileManager" = "nautilus";
         "$pdf-viewer" = "zathura";
         "$menu" = "rofi -show drun -show-icons";
@@ -38,13 +38,13 @@
         ];
 
         general = {
-          gaps_in = 5;
-          gaps_out = 10;
+          gaps_in = 0;
+          gaps_out = 0;
 
-          border_size = 2;
+          border_size = 0;
 
-          "col.active_border" = lib.mkDefault "rgb(2df598)";
-          "col.inactive_border" = lib.mkDefault "rgba(595959aa)";
+          # "col.active_border" = lib.mkDefault "rgb(2df598)";
+          # "col.inactive_border" = lib.mkDefault "rgba(595959aa)";
 
           resize_on_border = false;
 
@@ -97,7 +97,7 @@
             "border, 1, 10, default"
             "borderangle, 1, 8, default"
             "fade, 1, 7, default"
-            "workspaces, 1, 6, default"
+            "workspaces, 1, 6, default, slide"
           ];
         };
 

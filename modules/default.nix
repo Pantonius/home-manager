@@ -5,6 +5,7 @@
     ./dunst.nix
     ./git.nix
     ./gtk.nix
+    ./ghostty.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./hyprcursor.nix

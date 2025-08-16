@@ -71,6 +71,8 @@
         treesitter.enable = true;
         telescope.enable = true;
 
+        transparent.enable = true;
+
         fugitive.enable = true;
         indent-blankline.enable = true;
         web-devicons.enable = true;
@@ -164,9 +166,6 @@
           neovimImageText = "Nixvim";
         };
 
-        # harpoon
-        harpoon.enable = true;
-
         # neo-tree
         neo-tree = {
           enable = true;
@@ -196,6 +195,7 @@
             texlab.enable = true; # Latex
             bashls.enable = true; # Bash
             jsonls.enable = true; # JSON
+            tinymist.enable = true; # Typst
           };
 
           keymaps = {
@@ -381,38 +381,6 @@
       ];
 
       keymaps = [
-        # Harpoon
-        {
-          mode = "n";
-          key = "<leader>a";
-          action.__raw = "function() require'harpoon':list():add() end";
-        }
-        {
-          mode = "n";
-          key = "<C-e>";
-          action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end";
-        }
-        {
-          mode = "n";
-          key = "<C-j>";
-          action.__raw = "function() require'harpoon':list():select(1) end";
-        }
-        {
-          mode = "n";
-          key = "<C-k>";
-          action.__raw = "function() require'harpoon':list():select(2) end";
-        }
-        {
-          mode = "n";
-          key = "<C-l>";
-          action.__raw = "function() require'harpoon':list():select(3) end";
-        }
-        {
-          mode = "n";
-          key = "<C-m>";
-          action.__raw = "function() require'harpoon':list():select(4) end";
-        }
-
         # Compile tex file with xelatex
         {
           mode = "n";
@@ -425,6 +393,38 @@
           mode = "n";
           key = "<leader>pv";
           action = "<cmd>Neotree toggle<CR>";
+        }
+
+        # Navigate tabs
+        {
+          mode = "n";
+          key = "<M-Tab>";
+          action = ":tabNext<CR>";
+        }
+        {
+          mode = "n";
+          key = "<leader>1";
+          action = ":1tabNext<CR>";
+        }
+        {
+          mode = "n";
+          key = "<leader>2";
+          action = ":2tabNext<CR>";
+        }
+        {
+          mode = "n";
+          key = "<leader>3";
+          action = ":3tabNext<CR>";
+        }
+        {
+          mode = "n";
+          key = "<leader>4";
+          action = ":4tabNext<CR>";
+        }
+        {
+          mode = "n";
+          key = "<M-q>";
+          action = ":tabclose<CR>";
         }
 
         # move lines up and down in visual mode
@@ -499,7 +499,7 @@
 
       opts = {
         number = true; # Show line numbers
-        relativenumber = true; # Show relative line numbers
+        relativenumber = false; # Show relative line numbers
 
         tabstop = 2; # Tab width should be 2 spaces
         softtabstop = 2;
