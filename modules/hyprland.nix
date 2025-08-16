@@ -13,6 +13,7 @@
       settings = {
         "$terminal" = "alacritty";
         "$fileManager" = "nautilus";
+        "$pdf-viewer" = "zathura";
         "$menu" = "rofi -show drun -show-icons";
 
         exec-once = [
@@ -113,6 +114,7 @@
           "$mainMod, E, exec, $fileManager"
           "$mainMod, V, togglefloating"
           "$mainMod, R, exec, $menu"
+          "$mainMod, Z, exec, $pdf-viewer"
 
           "$mainMod, F, fullscreen, 1"
           "$mainMod SHIFT, F, fullscreen, 0"

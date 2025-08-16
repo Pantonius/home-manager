@@ -1,11 +1,10 @@
 { config, lib, ... }:
 {
   options = {
-    waybar.enable = lib.mkEnableOption "enables waybar";
+    zathura.enable = lib.mkEnableOption "enables zathura";
   };
 
-  config = lib.mkIf config.waybar.enable {
-    programs.zathura-pdf-poppler.enable = true;
+  config = lib.mkIf config.zathura.enable {
     programs.zathura = {
       enable = true;
 

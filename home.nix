@@ -50,6 +50,9 @@
   ## Zathura
   zathura.enable = true;
 
+  ## Utils
+  nh.enable = true;
+
   home.stateVersion = "25.05";
 
   # Let Home Manager install and manage itself.

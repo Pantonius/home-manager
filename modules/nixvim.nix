@@ -75,6 +75,86 @@
         indent-blankline.enable = true;
         web-devicons.enable = true;
 
+        # startup
+        startup = {
+          enable = true;
+
+          colors = {
+            background = "#ffffff";
+            foldedSection = "#ffffff";
+          };
+
+          sections = {
+            header = {
+              type = "text";
+              oldfilesDirectory = false;
+              align = "center";
+              foldSection = false;
+              title = "Header";
+              margin = 10;
+              content = [
+                " ▄████████  ▄█      ███     ▄██   ▄         ▄██████▄     ▄████████      ████████▄   ▄██████▄     ▄██████▄     ▄████████"
+                "███    ███ ███  ▀█████████▄ ███   ██▄      ███    ███   ███    ███      ███   ▀███ ███    ███   ███    ███   ███    ███"
+                "███    █▀  ███▌    ▀███▀▀██ ███▄▄▄███      ███    ███   ███    █▀       ███    ███ ███    ███   ███    █▀    ███    █▀ "
+                "███        ███▌     ███   ▀ ▀▀▀▀▀▀███      ███    ███  ▄███▄▄▄          ███    ███ ███    ███  ▄███          ███       "
+                "███        ███▌     ███     ▄██   ███      ███    ███ ▀▀███▀▀▀          ███    ███ ███    ███ ▀▀███ ████▄  ▀███████████"
+                "███    █▄  ███      ███     ███   ███      ███    ███   ███             ███    ███ ███    ███   ███    ███          ███"
+                "███    ███ ███      ███     ███   ███      ███    ███   ███             ███   ▄███ ███    ███   ███    ███    ▄█    ███"
+                "████████▀  █▀      ▄████▀    ▀█████▀        ▀██████▀    ███             ████████▀   ▀██████▀    ████████▀   ▄████████▀ "
+              ];
+              highlight = "Statement";
+              defaultColor = "";
+              oldfilesAmount = 0;
+            };
+
+            body = {
+              type = "mapping";
+              oldfilesDirectory = false;
+              align = "center";
+              foldSection = false;
+              title = "Menu";
+              margin = 5;
+              content = [
+                [
+                  " Find File"
+                  "Telescope find_files"
+                  "ff"
+                ]
+                [
+                  "󰍉 Find Word"
+                  "Telescope live_grep"
+                  "fr"
+                ]
+                [
+                  "  Recent Files"
+                  "Telescope oldfiles"
+                  "fh"
+                ]
+                [
+                  "  File Browser"
+                  "Neotree position=float"
+                  "pv"
+                ]
+              ];
+              highlight = "string";
+              defaultColor = "";
+              oldfilesAmount = 0;
+            };
+          };
+
+          options = {
+            paddings = [
+              1
+              3
+            ];
+          };
+
+          parts = [
+            "header"
+            "body"
+          ];
+        };
+
         # rich presence
         presence-nvim = {
           enable = true;

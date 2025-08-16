@@ -14,6 +14,7 @@
     # ./hyprpanel.nix
     ./kitty.nix
     ./nixvim.nix
+    ./nh.nix
     ./pretty-proto.nix
     ./rofi.nix
     # ./stylix.nix
