@@ -48,9 +48,13 @@
           "clock" = {
             format = "{:%H:%M}";
             on-click = "firefox --new-tab https://calendar.proton.me";
-            tooltip-format = "{calendar}";
+            tooltip-format = "<tt>{calendar}</tt>";
             calendar = {
+              mode = "month";
               format = {
+                months = "<span color='#2DF598'><b>{}</b></span>";
+                days = "<span color='#CCCCCC'>{}</span>";
+                weekdays = "<span color='#FFFFFF'><b>{}</b></span>";
                 today = "<span background='#2DF598' color='#121212'><b>{}</b></span>";
               };
             };
