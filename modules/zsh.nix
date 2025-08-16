@@ -13,7 +13,6 @@
         enable = true;
         plugins = [
           "git"
-          "thefuck"
         ];
         theme = "lambda";
       };
