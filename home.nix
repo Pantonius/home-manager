@@ -9,18 +9,24 @@
   services.gnome-keyring.enable = true;
 
   # Shells
-  # programs.bash.enable = true;
+  # Some modules of my own
+  ## Zsh
   zsh.enable = true;
 
-  # Some modules of my own
   ## Terminal
   ghostty.enable = true;
+
+  ## Neovim Config
+  nixvim.enable = true;
 
   ## Git
   git.enable = true;
 
   ## Neofetch but different
   bmofetch.enable = true;
+
+  ## Tmux
+  tmux.enable = true;
 
   ## Notification Manager Config
   dunst.enable = true;
@@ -33,9 +39,6 @@
   # hyprgrass.enable = true;
   hyprpaper.enable = true;
   hyprsunset.enable = true;
-
-  ## Neovim Config
-  nixvim.enable = true;
 
   ## Pretty Proto Config
   pretty-proto.enable = true;

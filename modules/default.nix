@@ -17,6 +17,7 @@
     ./nixvim.nix
     ./nh.nix
     ./pretty-proto.nix
+    ./tmux.nix
     ./rofi.nix
     # ./stylix.nix
     ./waybar.nix
