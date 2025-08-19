@@ -70,8 +70,9 @@
         lualine.enable = true;
         treesitter.enable = true;
         telescope.enable = true;
+        harpoon.enable = true;
 
-        transparent.enable = true;
+        tmux-navigator.enable = true;
 
         fugitive.enable = true;
         indent-blankline.enable = true;
@@ -381,6 +382,17 @@
       ];
 
       keymaps = [
+        # Harpoon
+        {
+          mode = "n";
+          key = "<leader>a";
+          action.__raw = "function() require'harpoon':list():add() end";
+        }
+        {
+          mode = "n";
+          key = "<C-e>";
+          action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end";
+        }
         # Compile tex file with xelatex
         {
           mode = "n";

@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }:
 {
@@ -12,5 +13,7 @@
     programs.fzf = {
       enable = true;
     };
+
+    programs.tmux.plugins = lib.mkIf config.tmux.enable [ pkgs.tmuxPlugins.tmux-fzf ];
   };
 }
