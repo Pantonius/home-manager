@@ -10,7 +10,7 @@
 
       settings = {
         background-opacity = "0";
-        font-family = "JetBrains Mono";
+        font-family = "FiraCode Nerd Font";
         confirm-close-surface = false;
       };
     };

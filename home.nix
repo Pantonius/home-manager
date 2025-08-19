@@ -13,6 +13,12 @@
   ## Zsh
   zsh.enable = true;
 
+  ## Zoxide
+  zoxide.enable = true;
+
+  ## fzf (fuzzyfind)
+  fzf.enable = true;
+
   ## Terminal
   ghostty.enable = true;
 
@@ -30,6 +36,7 @@
 
   ## Notification Manager Config
   dunst.enable = true;
+  # swaync.enable = true;
   # gtkTheme.enable = true;
 
   ## Hyprland Config

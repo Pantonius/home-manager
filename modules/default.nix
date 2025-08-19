@@ -3,6 +3,7 @@
     ./alacritty.nix
     ./bmofetch.nix
     ./dunst.nix
+    ./fzf.nix
     ./git.nix
     ./gtk.nix
     ./ghostty.nix
@@ -17,11 +18,13 @@
     ./nixvim.nix
     ./nh.nix
     ./pretty-proto.nix
+    ./swaync.nix
     ./tmux.nix
     ./rofi.nix
     # ./stylix.nix
     ./waybar.nix
     ./zathura.nix
+    ./zoxide.nix
     ./zsh.nix
   ];
 }

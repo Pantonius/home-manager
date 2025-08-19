@@ -463,7 +463,7 @@
         # Telescope
         {
           action = "<cmd>Telescope live_grep<CR>";
-          key = "<leader>fw";
+          key = "<leader>fr";
         }
         {
           action = "<cmd>Telescope find_files<CR>";
