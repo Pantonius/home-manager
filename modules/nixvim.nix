@@ -398,22 +398,22 @@
 
         {
           mode = "n";
-          key = "<A-1>";
+          key = "<C-1>";
           action.__raw = "function() require'harpoon':list():select(1) end";
         }
         {
           mode = "n";
-          key = "<A-2>";
+          key = "<C-2>";
           action.__raw = "function() require'harpoon':list():select(2) end";
         }
         {
           mode = "n";
-          key = "<A-3>";
+          key = "<C-3>";
           action.__raw = "function() require'harpoon':list():select(3) end";
         }
         {
           mode = "n";
-          key = "<A-4>";
+          key = "<C-4>";
           action.__raw = "function() require'harpoon':list():select(4) end";
         }
 
