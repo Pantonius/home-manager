@@ -19,12 +19,6 @@
 
       colorschemes = {
         nord.enable = true;
-        tokyonight = {
-          settings = {
-            style = "storm";
-            lualine_bold = true;
-          };
-        };
       };
 
       globals.mapleader = " ";
@@ -66,6 +60,7 @@
 
           vim.g.coqtail_noimap = 1
         '';
+
       plugins = {
         lualine.enable = true;
         treesitter.enable = true;
@@ -77,6 +72,22 @@
         fugitive.enable = true;
         indent-blankline.enable = true;
         web-devicons.enable = true;
+
+        obsidian = {
+          enable = true;
+
+          settings = {
+            workspaces = [
+              {
+                name = "cityofdogs";
+                path = "~/Nextcloud/Notes/";
+              }
+            ];
+            picker = {
+              name = "fzf-lua";
+            };
+          };
+        };
 
         # startup
         startup = {
@@ -197,7 +208,22 @@
             texlab.enable = true; # Latex
             bashls.enable = true; # Bash
             jsonls.enable = true; # JSON
-            tinymist.enable = true; # Typst
+            tinymist = {
+              # Typst
+              enable = true;
+              settings = {
+                exportPdf = "never";
+                outputPath = "$root/target/$dir/$name";
+                formatterMode = "typstyle";
+                on_attach = "
+                  function(_, bufnr)
+                                    local dir, file = vim.api.nvim_buf_get_name(bufnr):match(\"(.*/)(.*)\")
+                                    if file == \"main.typ\" then
+                                      vim.cmd(\"TypstPreview\")
+                                    end
+                                  end";
+              };
+            };
           };
 
           keymaps = {
@@ -395,7 +421,6 @@
           key = "<C-e>";
           action.__raw = "function() require'harpoon'.ui:toggle_quick_menu(require'harpoon':list()) end";
         }
-
         {
           mode = "n";
           key = "<C-1>";
