@@ -12,6 +12,8 @@
         background-opacity = "0";
         font-family = "FiraCode Nerd Font";
         confirm-close-surface = false;
+        # shell-integration = "detect";
+        # shell-integration-features = "ssh-terminfo,ssh-env";
       };
     };
 

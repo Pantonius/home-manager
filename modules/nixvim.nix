@@ -12,6 +12,10 @@
   config = lib.mkIf config.nixvim.enable {
     programs.ripgrep.enable = true; # Required for Telescope
 
+    home.packages = [
+      pkgs.mdx-language-server
+    ];
+
     # see https://github.com/nix-community/nixvim
     programs.nixvim = {
       enable = true;
@@ -85,6 +89,11 @@
             ];
             picker = {
               name = "fzf-lua";
+            };
+
+            completion = {
+              nvim_cmp = true;
+              min_chars = 2;
             };
           };
         };
@@ -208,6 +217,7 @@
             texlab.enable = true; # Latex
             bashls.enable = true; # Bash
             jsonls.enable = true; # JSON
+            marksman.enable = true; # Markdown
             tinymist = {
               # Typst
               enable = true;
@@ -400,13 +410,13 @@
         };
       };
 
-      extraPlugins = with pkgs.vimPlugins; [
-        LanguageTool-nvim
-        vimtex
-        Coqtail
-        coq-lsp-nvim
-        vim-obsession
-        # mdx-analyzer
+      extraPlugins = with pkgs; [
+        vimPlugins.LanguageTool-nvim
+        vimPlugins.vimtex
+        vimPlugins.Coqtail
+        vimPlugins.coq-lsp-nvim
+        mdx-language-server
+        vimPlugins.vim-obsession
       ];
 
       keymaps = [

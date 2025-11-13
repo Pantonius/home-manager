@@ -22,6 +22,7 @@
     ./tmux.nix
     ./rofi.nix
     # ./stylix.nix
+    ./vscodium.nix
     ./waybar.nix
     ./zathura.nix
     ./zoxide.nix

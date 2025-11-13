@@ -25,6 +25,9 @@
   ## Neovim Config
   nixvim.enable = true;
 
+  ## VSCodium
+  vscodium.enable = true;
+
   ## Git
   git.enable = true;
 
