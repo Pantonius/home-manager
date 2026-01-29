@@ -1,12 +1,19 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "anton";
   home.homeDirectory = "/home/anton";
+  imports = [ inputs.sops-nix.homeManagerModules.sops ];
 
   services.gnome-keyring.enable = true;
+  sops = {
+    age.keyFile = "/home/anton/.config/sops/age/keys.txt";
+    defaultSopsFile = ./secrets/secrets.yaml;
+    # defaultSymlinkPath = "/run/user/1000/secrets";
+    # defaultSecretsMountPoint = "/run/user/1000/secrets.d";
+  };
 
   # Shells
   # Some modules of my own
@@ -53,6 +60,9 @@
   ## Pretty Proto Config
   pretty-proto.enable = true;
 
+  ## ProtonPass
+  # proton-pass.enable = true;
+
   ## Rofi Config
   rofi.enable = true;
 
@@ -67,7 +77,7 @@
   ## Utils
   nh.enable = true;
 
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

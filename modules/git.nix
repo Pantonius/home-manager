@@ -8,14 +8,16 @@
     programs.git = {
       enable = true;
 
-      userName = "Anton Pogrebnjak";
-      userEmail = "contact@pantonius.dev";
+      settings = {
+        user = {
+          name = "Anton Pogrebnjak";
+          email = "contact@pantonius.dev";
+        };
 
-      aliases = {
-        "history" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
-      };
+        alias = {
+          "history" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
+        };
 
-      extraConfig = {
         init.defaultBranch = "main";
       };
     };

@@ -18,6 +18,7 @@
     ./nixvim.nix
     ./nh.nix
     ./pretty-proto.nix
+    ./proton-pass.nix
     ./swaync.nix
     ./tmux.nix
     ./rofi.nix

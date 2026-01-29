@@ -77,114 +77,98 @@
         indent-blankline.enable = true;
         web-devicons.enable = true;
 
-        obsidian = {
-          enable = true;
-
-          settings = {
-            workspaces = [
-              {
-                name = "cityofdogs";
-                path = "~/Nextcloud/Notes/";
-              }
-            ];
-            picker = {
-              name = "fzf-lua";
-            };
-
-            completion = {
-              nvim_cmp = true;
-              min_chars = 2;
-            };
-          };
-        };
-
         # startup
         startup = {
           enable = true;
 
-          colors = {
-            background = "#ffffff";
-            foldedSection = "#ffffff";
-          };
+          settings = {
 
-          sections = {
-            header = {
-              type = "text";
-              oldfilesDirectory = false;
-              align = "center";
-              foldSection = false;
-              title = "Header";
-              margin = 10;
-              content = [
-                " ▄████████  ▄█      ███     ▄██   ▄         ▄██████▄     ▄████████      ████████▄   ▄██████▄     ▄██████▄     ▄████████"
-                "███    ███ ███  ▀█████████▄ ███   ██▄      ███    ███   ███    ███      ███   ▀███ ███    ███   ███    ███   ███    ███"
-                "███    █▀  ███▌    ▀███▀▀██ ███▄▄▄███      ███    ███   ███    █▀       ███    ███ ███    ███   ███    █▀    ███    █▀ "
-                "███        ███▌     ███   ▀ ▀▀▀▀▀▀███      ███    ███  ▄███▄▄▄          ███    ███ ███    ███  ▄███          ███       "
-                "███        ███▌     ███     ▄██   ███      ███    ███ ▀▀███▀▀▀          ███    ███ ███    ███ ▀▀███ ████▄  ▀███████████"
-                "███    █▄  ███      ███     ███   ███      ███    ███   ███             ███    ███ ███    ███   ███    ███          ███"
-                "███    ███ ███      ███     ███   ███      ███    ███   ███             ███   ▄███ ███    ███   ███    ███    ▄█    ███"
-                "████████▀  █▀      ▄████▀    ▀█████▀        ▀██████▀    ███             ████████▀   ▀██████▀    ████████▀   ▄████████▀ "
-              ];
-              highlight = "Statement";
-              defaultColor = "";
-              oldfilesAmount = 0;
+            colors = {
+              background = "#ffffff";
+              foldedSection = "#ffffff";
             };
 
-            body = {
-              type = "mapping";
-              oldfilesDirectory = false;
-              align = "center";
-              foldSection = false;
-              title = "Menu";
-              margin = 5;
-              content = [
-                [
-                  " Find File"
-                  "Telescope find_files"
-                  "ff"
-                ]
-                [
-                  "󰍉 Find Word"
-                  "Telescope live_grep"
-                  "fr"
-                ]
-                [
-                  "  Recent Files"
-                  "Telescope oldfiles"
-                  "fh"
-                ]
-                [
-                  "  File Browser"
-                  "Neotree position=float"
-                  "pv"
-                ]
-              ];
-              highlight = "string";
-              defaultColor = "";
-              oldfilesAmount = 0;
-            };
-          };
+            sections = {
+              header = {
+                type = "text";
+                oldfilesDirectory = false;
+                align = "center";
+                foldSection = false;
+                title = "Header";
+                margin = 10;
+                content = [
+                  " ▄████████  ▄█      ███     ▄██   ▄         ▄██████▄     ▄████████      ████████▄   ▄██████▄     ▄██████▄     ▄████████"
+                  "███    ███ ███  ▀█████████▄ ███   ██▄      ███    ███   ███    ███      ███   ▀███ ███    ███   ███    ███   ███    ███"
+                  "███    █▀  ███▌    ▀███▀▀██ ███▄▄▄███      ███    ███   ███    █▀       ███    ███ ███    ███   ███    █▀    ███    █▀ "
+                  "███        ███▌     ███   ▀ ▀▀▀▀▀▀███      ███    ███  ▄███▄▄▄          ███    ███ ███    ███  ▄███          ███       "
+                  "███        ███▌     ███     ▄██   ███      ███    ███ ▀▀███▀▀▀          ███    ███ ███    ███ ▀▀███ ████▄  ▀███████████"
+                  "███    █▄  ███      ███     ███   ███      ███    ███   ███             ███    ███ ███    ███   ███    ███          ███"
+                  "███    ███ ███      ███     ███   ███      ███    ███   ███             ███   ▄███ ███    ███   ███    ███    ▄█    ███"
+                  "████████▀  █▀      ▄████▀    ▀█████▀        ▀██████▀    ███             ████████▀   ▀██████▀    ████████▀   ▄████████▀ "
+                ];
+                highlight = "Statement";
+                defaultColor = "";
+                oldfilesAmount = 0;
+              };
 
-          options = {
-            paddings = [
-              1
-              3
+              body = {
+                type = "mapping";
+                oldfilesDirectory = false;
+                align = "center";
+                foldSection = false;
+                title = "Menu";
+                margin = 5;
+                content = [
+                  [
+                    " Find File"
+                    "Telescope find_files"
+                    "ff"
+                  ]
+                  [
+                    "󰍉 Find Word"
+                    "Telescope live_grep"
+                    "fr"
+                  ]
+                  [
+                    "  Recent Files"
+                    "Telescope oldfiles"
+                    "fh"
+                  ]
+                  [
+                    "  File Browser"
+                    "Neotree position=float"
+                    "pv"
+                  ]
+                ];
+                highlight = "string";
+                defaultColor = "";
+                oldfilesAmount = 0;
+              };
+            };
+
+            options = {
+              paddings = [
+                1
+                3
+              ];
+            };
+
+            parts = [
+              "header"
+              "body"
             ];
           };
-
-          parts = [
-            "header"
-            "body"
-          ];
         };
 
         # rich presence
-        presence-nvim = {
+        presence = {
           enable = true;
 
-          autoUpdate = true;
-          mainImage = "file";
-          neovimImageText = "Nixvim";
+          settings = {
+            autoUpdate = true;
+            mainImage = "file";
+            neovimImageText = "Nixvim";
+          };
         };
 
         # neo-tree
@@ -206,14 +190,15 @@
             nixd.enable = true; # Nix
             ts_ls.enable = true; # Typescript
             pylsp.enable = true; # Python
-            ccls.enable = true; # C/C++
+            # ccls.enable = true; # C/C++
+            clangd.enable = true;
             rust_analyzer = {
               # Rust
               enable = true;
               installCargo = true;
               installRustc = true;
             };
-            erlangls.enable = true; # Erlang
+            # erlangls.enable = true; # Erlang
             texlab.enable = true; # Latex
             bashls.enable = true; # Bash
             jsonls.enable = true; # JSON
@@ -271,6 +256,10 @@
               "<leader>cr" = {
                 action = "rename";
                 desc = "Rename";
+              };
+              "<leader>cf" = {
+                action = "code_action";
+                desc = "Show Code Action";
               };
             };
             diagnostic = {
@@ -415,6 +404,8 @@
         vimPlugins.vimtex
         vimPlugins.Coqtail
         vimPlugins.coq-lsp-nvim
+        vimPlugins.nvim-dap
+        vimPlugins.nvim-dap-ui
         mdx-language-server
         vimPlugins.vim-obsession
       ];

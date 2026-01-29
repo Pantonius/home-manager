@@ -29,6 +29,7 @@
           "desc:Crestron Electronics Inc. Crestron 420, preferred, auto, 1, mirror, eDP-1"
           "desc:Dell Inc. DELL U2713HM GK0KD277235L, preferred, 960x-1080, 1"
           "desc:AOC 2470W GGZH8HA096968, preferred, -120x-1920, 1, transform, 3"
+          "desc:Christie Digital Systems Inc QuadHD84 QHD84P2600001, preferred, auto, 1, mirror, eDP-1"
           ",preferred,auto,1"
         ];
 

@@ -12,7 +12,6 @@
   config = lib.mkIf config.rofi.enable {
     programs.rofi = {
       enable = true;
-      package = pkgs.rofi-wayland;
       theme = lib.mkDefault "custom-theme.rasi";
       plugins = [
         pkgs.rofi-file-browser
@@ -20,6 +19,14 @@
       modes = [
         "drun"
         "file-browser-extended"
+        #   {
+        #     name = "bluetooth";
+        #     path = lib.getExe pkgs.rofi-bluetooth;
+        #   }
+        #   {
+        #     name = "nm";
+        #     path = lib.getExe pkgs.rofi-network-manager;
+        #   }
       ];
     };
 
